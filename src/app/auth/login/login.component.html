@@ -3,7 +3,7 @@
         <h1>Nocturnal's</h1>
 
         @if(errorMessage){
-            <div class="text-center">{{errorMessage}}</div>
+            <div class="text-center text-red-600">{{errorMessage}}</div>
         }
         <form [formGroup] = 'form' (ngSubmit)="onSubmit()">
             <div class="textInputWrapper">
