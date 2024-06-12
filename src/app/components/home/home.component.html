@@ -1,0 +1,166 @@
+<app-nav-bar></app-nav-bar>
+
+<!--Contenido Header con animacion de reveal.-->
+
+<header class="mt-11">
+    <div class="header-container">
+        <div class="container">
+            <h1>¡Bienvenido a <br><span>Nocturnal Hunters!</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="batman-button" [routerLink]="['/download']">
+                <span>PLAY NOW</span>
+            </button>
+        </div>
+        <div class="img video">
+           <!-- <video autoplay loop muted style="max-width: 100%;">
+                <source src="../../../assets/vids/Vid2.mp4" type="video/mp4">
+            </video>-->
+            <img src="../../../assets/img/campo.jpeg" alt="app" style="max-width: 85%;" class="rounded">
+        </div>
+    </div>
+
+    <aside id="logo-sidebar"
+        class="absolute mt-11 top-0 left-2 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full sm:translate-x-0 "
+        aria-label="Sidebar">
+        <div class="h-full px-3 pb-4 overflow-y-auto ">
+            <ul class="space-y-2 font-medium border-l-2">
+                <li class="ml-2" id="liDr">
+                    <a href="#" class="flex items-center p-2">
+                        <img class="w-5 h-5" src="../../../assets/social-icons/flechaDr.png" alt="">
+                        <span class="ms-3">Inicio</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+</header>
+
+<!--Section con cartas. Poner informacion del programa y lo que ofrece aqui-->
+<!--A las cards se podrian añadir imagenes si hiciese falta-->
+
+<section>
+    <div class="container2">
+        <div class="info">
+            <div>
+                <h1 class="h1Min">Lorem ipsum dolor sit.</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates consectetur blanditiis ab
+                    delectus
+                    deleniti earum praesentium ratione odio suscipit, ipsa doloremque, quasi assumenda, nihil labore
+                    quia
+                    similique consequatur adipisci. Hic.</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="cards">
+                <h3>Titulo 1</h3>
+                <p class="backColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis in
+                    odit
+                    eligendi deleniti omnis
+                    dolor consectetur amet itaque tenetur nemo, laborum, sit consequatur. Rerum cumque fuga repellat
+                    amet sed!</p>
+            </div>
+            <div class="cards">
+                <h3>Titulo 3</h3>
+                <p class="backColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis in
+                    odit
+                    eligendi deleniti omnis
+                    dolor consectetur amet itaque tenetur nemo, laborum, sit consequatur. Rerum cumque fuga repellat
+                    amet sed!</p>
+            </div>
+            <div class="cards">
+                <h3>Titulo 3</h3>
+                <p class="backColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis in
+                    odit
+                    eligendi deleniti omnis
+                    dolor consectetur amet itaque tenetur nemo, laborum, sit consequatur. Rerum cumque fuga repellat
+                    amet sed!</p>
+            </div>
+            <div class="cards">
+                <h3>Titulo 4</h3>
+                <p class="backColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis in
+                    odit
+                    eligendi deleniti omnis
+                    dolor consectetur amet itaque tenetur nemo, laborum, sit consequatur. Rerum cumque fuga repellat
+                    amet sed!</p>
+            </div>
+        </div>
+
+        <div class="mt-10">
+            <h2>Tecnologias utilizadas</h2>
+            <div class="flex justify-center">
+                <ul class="list-none flex">
+                    <li class="mx-2"><a href="#"><img src="../../../assets/social-icons/angularColor.jpg" alt="Facebook"
+                                class="social-icon" style="width: 75px;"></a></li>
+                    <li class="mx-2"><a href="#"><img src="../../../assets/social-icons/cShardColor.png" alt="C#"
+                                class="social-icon" style="width: 70px;"></a></li>
+                    <li class="mx-2"><a href="#"><img src="../../../assets/social-icons/mysqlColor.png" alt="Mysql"
+                                class="social-icon"></a></li>
+                    <li class="mx-2"><a href="#"><img src="../../../assets/social-icons/unityColor.webp" alt="Unity"
+                                class="social-icon"></a></li>
+                    <li class="mx-2"><a href="#"><img src="../../../assets/social-icons/tailwindColor.png"
+                                alt="Tailwind" class="social-icon" style="margin-top: 42px;"></a></li>
+                    <li class="mx-2"><a href="#"><img src="../../../assets/social-icons/javaColor.png" alt="LinkedIn"
+                                class="social-icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <aside id="sidebar-right"
+        class="absolute mt-11 top-80 right-2 z-40 pt-20 transition-transform -translate-x-full sm:translate-x-0"
+        aria-label="Sidebar">
+        <div class="h-full px-3 pb-4 overflow-y-auto ">
+            <ul class="space-y-2 font-medium border-r-2">
+                <li class="mr-3" id="liIzq">
+                    <a href="#" class="flex items-center p-2">
+                        <span class="ms-3 mr-4">Info</span>
+                        <img class="w-5 h-5" src="../../../assets/social-icons/flechaIzq.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+</section>
+
+<!--Repetir header pero a la inversa-->
+
+<header>
+    <div class="header-container mb-11">
+        <div class="img">
+            <img src="../../../assets/img/campo.jpeg" alt="app" class="image-app">
+        </div>
+        <div class="container ml-11">
+            <h1>¡Bienvenido a <br><span>Nocturnal Hunters!</span> </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="startButton">
+                <a id="anotherColor" href="#">Ver trailer</a>
+            </button>
+        </div>
+    </div>
+
+    <aside id="logo-sidebar"
+        class="absolute mt-11 top-96 left-2 z-40 pt-20 transition-transform -translate-x-full sm:translate-x-0 "
+        aria-label="Sidebar">
+        <div class="h-full px-3 pb-4 overflow-y-auto ">
+            <ul class="space-y-2 font-medium border-l-2">
+                <li class="ml-2" id="liDr">
+                    <a href="#" class="flex items-center p-2">
+                        <img class="w-5 h-5" src="../../../assets/social-icons/flechaDr.png" alt="">
+                        <span class="ms-3">Trailer</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+</header>
+
+<!--Boton Scroll Up-->
+
+<button class="btnUp">
+    <div class="arrow-up"></div>
+</button>
+
+<app-footer></app-footer>

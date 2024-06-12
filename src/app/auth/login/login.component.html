@@ -1,0 +1,31 @@
+<div class="oculto flex flex-col md:flex-row">
+    <div class="md:w-1/2 flex flex-col justify-center items-center">
+        <h1>Nocturnal's</h1>
+
+        @if(errorMessage){
+            <div class="text-center">{{errorMessage}}</div>
+        }
+        <form [formGroup] = 'form' (ngSubmit)="onSubmit()">
+            <div class="textInputWrapper">
+                <input placeholder="Correo electronico" type="text" class="textInput" formControlName="email">
+            </div>
+            <div class="textInputWrapper">
+                <input placeholder="Contraseña" type="password" class="textInput" formControlName="password">
+            </div>
+            <button class="startButton md:mb-0 ml-1">Iniciar Sesion</button>
+        </form>
+
+        <div class="py-2 mt-3">
+            <footer class="w-full text-center">
+                <p>¿No tienes cuenta?
+                    <a [routerLink]="['/auth/registro']">Registrate</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+    <div class="md:w-1/2 flex justify-center items-center bg-negro">
+        <div>
+            <img src="../../../assets/img/pexels-kerber-2708981.jpg" alt="" width="300px">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+/* NavBar CSS */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  unicode-bidi: isolate;
+  background-color: rgb(22, 22, 22);
+  border-bottom: 0.5px solid rgb(34, 34, 34);;
+  /*border-bottom: 0.5px solid rgb(128, 95, 247);*/
+}
+
+ul {
+  display: flex;
+  padding: 0 20px;
+  gap: 10px;
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Protest Strike", sans-serif;
+  color: #fff;
+  margin: 0;
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+.navButton {
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: 500;
+  position: relative;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.navButton:focus,
+.navButton:hover {
+  color: #fff;
+}
+
+.navButton:focus:after,
+.navButton:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.navButton:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+#register {
+  color: #fff;
+  margin-right: 10px;
+}
+
+#login {
+  color: #bfb0f2;
+  margin-right: 20px;
+}
+
+
